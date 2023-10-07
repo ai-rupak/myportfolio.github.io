@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2598a391c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <h1 class="logo"><span>R</span>upak.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi ,I'm <span>Rupak Swar</span></h1>
+            <span id="element"></span>
+            <!-- <p>Full-Stack Developer</p> -->
+            
+        </div>
+        <div class="wrapper">
+            <a href="https://github.com/ai-rupak"><span>Visit Github <i class="fa-brands fa-github"></i></span></a>
+        </div>
+
+    </div>
+</div> 
+<!-- ------------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/157948906_436457817576334_8770032295543307796_n.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid id, eum natus quibusdam ut mollitia saepe est repudiandae omnis ullam illo perspiciatis minus fuga iusto, enim voluptatibus, iste consequuntur. Excepturi inventore vero iusto natus fugiat eligendi eaque beatae culpa molestias, iste, tenetur ipsa quo cum aliquam soluta quae. Vel, corporis.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Machine Learning</span><br>Deploying ML Model</li>
+                        <li><span>UI/UX</span><br>Designing WebApp interface</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022-Current</span><br>Web app Development</li>
+                        <li><span>2023-</span><br>Machine Learning || Deploying ML Model</li>
+                        <li><span>2022-Current</span><br>Designing Web/App interface</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>Gobardanga Khantura High School</li>
+                        <li><span>2021</span><br>Gobardanga Khantura High School</li>
+                        <li><span>2023</span><br>Brainware University.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ________________services______________________ -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem explicabo tempore recusandae iste amet voluptates. Sapiente blanditiis dolor voluptatibus.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem explicabo tempore recusandae iste amet voluptates. Sapiente blanditiis dolor voluptatibus.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem explicabo tempore recusandae iste amet voluptates. Sapiente blanditiis dolor voluptatibus.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- _________________portfolio____________________________ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                        <p>the app connects you to the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                        <p>the app connects you to the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                        <p>the app connects you to the talented people around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>        
+            </div>  
+        </div>
+        <a href="https://github.com/ai-rupak" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- _________________________contact_________________________ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>swarrupak@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>7431911822</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rupak.swar"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/ai-rupak"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/__rupak_/?img_index=2"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rupak-swar-54a101259/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rupak | Made by Rupak </p>
+    </div>
+</div>
+<div id="button-container">
+    <a href="#header" id="scroll-button"><i class="fa-solid fa-house"></i></a>
+  </div>
+  
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab (tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby0XuwzirnBCL5lAwikgQTn6Ttr1S-T8J4mormuSbCxXrCQLquUsBUah2wA3xmBwd03/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!-- ___________extra button______________ -->
+  <script>
+    document.querySelector('#scroll-button').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#header').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+      
+  </script>
+
+  <script>
+    window.addEventListener('scroll', function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById('button-container').style.display = 'block';
+        } else {
+          document.getElementById('button-container').style.display = 'none';
+        }
+      });
+      
+  </script>
+  <!-- ---------------animation------------------------ -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+      var typed = new Typed('#element', {
+        strings: ['Full-Stack Developer', 'Front-end Developer','UI/UX Designer' ,'Machine Learning Engineer' ],
+        typeSpeed: 30,
+        loop:true,
+      });
+    </script>
+   
+</body>
+</html>
